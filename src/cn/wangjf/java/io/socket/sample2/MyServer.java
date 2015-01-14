@@ -11,6 +11,9 @@ import java.net.Socket;
  * User: wangjf
  * Date: 15-1-11
  * Time: 下午7:42
+ *
+ * 多线程服务端
+ *
  */
 public class MyServer {
 
@@ -18,7 +21,7 @@ public class MyServer {
         ServerSocket server = new ServerSocket(10000);
 
         while (true) {
-            Socket socket = server.accept();
+            Socket socket = server.accept();  //每次接受到新的连接，调用invoke开启一个新的线程
             invoke(socket);
         }
     }

@@ -11,6 +11,9 @@ import java.net.Socket;
  * User: wangjf
  * Date: 15-1-11
  * Time: 下午6:29
+ *
+ * 简单socket通信 服务端
+ *
  */
 public class MyServer {
 

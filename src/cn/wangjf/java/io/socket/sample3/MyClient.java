@@ -12,6 +12,9 @@ import java.util.logging.Logger;
  * User: wangjf
  * Date: 15-1-12
  * Time: 下午2:48
+ *
+ * 传输对象
+ *
  */
 public class MyClient {
 

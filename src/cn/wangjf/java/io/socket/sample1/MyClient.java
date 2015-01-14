@@ -9,6 +9,9 @@ import java.net.Socket;
  * User: wangjf
  * Date: 15-1-11
  * Time: 下午6:30
+ *
+ * 简单socket通信 客户端
+ *
  */
 public class MyClient {
 

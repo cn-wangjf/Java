@@ -15,6 +15,9 @@ import java.util.zip.GZIPOutputStream;
  * User: wangjf
  * Date: 15-1-14
  * Time: 下午6:01
+ *
+ * 传输压缩对象
+ *
  */
 public class MyClient {
 
