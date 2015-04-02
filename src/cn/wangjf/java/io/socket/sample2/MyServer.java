@@ -20,10 +20,16 @@ public class MyServer {
     public static void main(String[] args) throws IOException {
         ServerSocket server = new ServerSocket(10000);
 
-        while (true) {
-            Socket socket = server.accept();  //每次接受到新的连接，调用invoke开启一个新的线程
-            invoke(socket);
+        try {
+        	while (true) {
+                Socket socket = server.accept();  //每次接受到新的连接，调用invoke开启一个新的线程
+                invoke(socket);
+            }
+        } finally {
+        	server.close();
         }
+        
+        
     }
 
     private static void invoke(final Socket client) throws IOException {
@@ -49,15 +55,10 @@ public class MyServer {
                 } finally {
                     try {
                         in.close();
-                    } catch (Exception e) {
-                    }
-                    try {
                         out.close();
-                    } catch (Exception e) {
-                    }
-                    try {
                         client.close();
                     } catch (Exception e) {
+                    	e.printStackTrace();
                     }
                 }
             }

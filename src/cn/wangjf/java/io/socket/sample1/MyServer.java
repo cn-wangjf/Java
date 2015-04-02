@@ -33,5 +33,6 @@ public class MyServer {
             }
         }
         socket.close();
+        server.close();
     }
 }

@@ -22,7 +22,8 @@ public class MyServer {
 
     private final static Logger logger = Logger.getLogger(MyServer.class.getName());
 
-    public static void main(String[] args) throws IOException {
+    @SuppressWarnings("resource")
+	public static void main(String[] args) throws IOException {
         ServerSocket server = new ServerSocket(10000);
 
         while (true) {

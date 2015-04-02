@@ -1,6 +1,9 @@
 .git
 .idea
+bin/*
 target/*
 out/*
 *.iml
 /*.iml
+.classpath
+.project
