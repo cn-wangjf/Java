@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.concurrent.*;
 
 /**
+ * 多线程排序
  * User: wangjf
  * Date: 15-1-4
  * Time: 下午4:37
