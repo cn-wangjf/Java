@@ -1,4 +1,4 @@
-package cn.wangjf.java.io.socket.sample3;
+package cn.wangjf.java.socket.sample3;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;

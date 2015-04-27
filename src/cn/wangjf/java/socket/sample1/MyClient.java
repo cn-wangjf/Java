@@ -1,4 +1,4 @@
-package cn.wangjf.java.io.socket.sample2;
+package cn.wangjf.java.socket.sample1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -8,7 +8,10 @@ import java.net.Socket;
 /**
  * User: wangjf
  * Date: 15-1-11
- * Time: 下午8:02
+ * Time: 下午6:30
+ *
+ * 简单socket通信 客户端
+ *
  */
 public class MyClient {
 
@@ -20,12 +23,13 @@ public class MyClient {
 
         while (true) {
             String msg = reader.readLine();
+            System.out.println("client input: " + msg);
             out.println(msg);
             out.flush();
             if (msg.equals("bye")) {
                 break;
             }
-            System.out.println(in.readLine());
+            System.out.println(in.readLine());  //会阻塞
         }
         socket.close();
     }
